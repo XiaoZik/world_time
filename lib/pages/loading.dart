@@ -12,7 +12,7 @@ class _LoadingState extends State<Loading> {
     WorldTime instance = WorldTime(
         location: 'London',
         flag: 'uk.png',
-        url: 'api/timezone/Europe/London');
+        url: '/api/timezone/Europe/London');
     await instance.getTime();
     Navigator.pushReplacementNamed(context, '/home', arguments: {
       'location': instance.location,
